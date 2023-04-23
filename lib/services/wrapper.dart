@@ -12,7 +12,6 @@ class AuthWrapper extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final auth = FirebaseAuth.instance.currentUser;
-    //UserModel? user = Provider.of<UserModel?>(context);
     if (auth?.uid != null) {
       UserService().getHours();
       WidgetsBinding.instance.addPostFrameCallback(
