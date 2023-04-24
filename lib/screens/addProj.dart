@@ -35,7 +35,7 @@ class _AddProjectState extends State<AddProject> {
               showSelectedItems: true,
             ),
             onChanged: print,
-            selectedItems: ["Excavator"],
+            selectedItems: ["Excavator",'Backhoe Loader'],
           )
         ],
       ),
