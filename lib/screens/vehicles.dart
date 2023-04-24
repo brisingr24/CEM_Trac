@@ -8,6 +8,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 
+import 'myProject.dart';
+
 class SideDrawer extends StatelessWidget {
   const SideDrawer({Key? key}) : super(key: key);
 
@@ -52,6 +54,20 @@ class SideDrawer extends StatelessWidget {
               Navigator.of(context).pop(),
               BetterFeedback.of(context)
                   .show((UserFeedback p0) => print(p0.extra))
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.account_circle_outlined),
+            title: const Text('Projects'),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Project(
+                    uid: FirebaseAuth.instance.currentUser!.uid,
+                  ),
+                ),
+              )
             },
           ),
           ListTile(
