@@ -1,6 +1,9 @@
 class VehicleListData {
   List<VehicleData> vehicleData = [
     VehicleData(
+        name: "Backhoe Loader",
+        sid: "TN07L4545",
+        imagePath: "assets/images/jcb.jpg",
         componentData: [
           ComponentData(
               componentName: 'Radiator Hose Connection',
@@ -78,9 +81,7 @@ class VehicleListData {
               totalHour: 26280,
               changeType: 'Yes'),
         ],
-        name: "Backhoe Loader",
-        sid: "TN07L4545",
-        imagePath: "assets/images/jcb.jpg"),
+    ),
     VehicleData(
       name: "Tandem Roller",
       sid: "TN09AP7865",

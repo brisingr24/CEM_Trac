@@ -50,6 +50,7 @@ dependencies:
   provider: ^6.0.5
   firebase_storage: ^11.1.0
   image_picker: ^0.8.7+1
+  dropdown_search: ^5.0.6
 
 dev_dependencies:
   flutter_test:
